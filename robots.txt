@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hostalsunset.site/sitemap.xml
