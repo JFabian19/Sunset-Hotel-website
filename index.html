@@ -1,384 +1,590 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es-PE" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hostal Sunset | Villa El Salvador</title>
-    <meta name="description" content="Hostal Sunset en Villa El Salvador. Habitaciones con Jacuzzi, baños con tina de mayólica y cochera privada 24 horas.">
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QB1T62JRG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      gtag('config', 'G-4QB1T62JRG');
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        background: '#0F0F10',
-                        surface: '#18181B',
-                        sunsetOrange: '#F97316',
-                        sunsetPink: '#DB2777',
-                        textMain: '#F3F4F6',
-                        textMuted: '#9CA3AF',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
+  <title>Hostal Sunset Villa El Salvador | Habitaciones con Jacuzzi y Cochera</title>
+  <meta name="description" content="Hostal Sunset en Villa El Salvador (VES). Habitaciones temáticas, Suite con Jacuzzi, baños impecables y cochera privada 24 horas. Privacidad y confort garantizado." />
+
+  <!-- Indexación -->
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#0F0F10" />
+
+  <!-- Canonical (CLAVE) -->
+  <link rel="canonical" href="https://hostalsunset.site/" />
+  <link rel="alternate" hreflang="es-pe" href="https://hostalsunset.site/" />
+  <link rel="alternate" hreflang="x-default" href="https://hostalsunset.site/" />
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="es_PE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hostal Sunset" />
+  <meta property="og:url" content="https://hostalsunset.site/" />
+  <meta property="og:title" content="Hostal Sunset Villa El Salvador | Jacuzzi y Cochera" />
+  <meta property="og:description" content="Habitaciones desde S/40 con cochera privada 24 horas y suite con jacuzzi. Ubicación discreta en Villa El Salvador (VES)." />
+  <meta property="og:image" content="https://hostalsunset.site/img/hero.webp" />
+  <meta property="og:image:alt" content="Habitación moderna en Hostal Sunset Villa El Salvador" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hostal Sunset Villa El Salvador | Jacuzzi y Cochera" />
+  <meta name="twitter:description" content="Habitaciones desde S/40 con cochera privada 24 horas y suite con jacuzzi. Ubicación discreta en VES." />
+  <meta name="twitter:image" content="https://hostalsunset.site/img/hero.webp" />
+
+  <!-- Favicons (si tienes archivos, déjalos; si no, puedes borrarlos) -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Performance preconnect -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QB1T62JRG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4QB1T62JRG');
+  </script>
+
+  <!-- Schema: WebSite + Lodging -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://hostalsunset.site/#website",
+        "url": "https://hostalsunset.site/",
+        "name": "Hostal Sunset",
+        "inLanguage": "es-PE"
+      },
+      {
+        "@type": ["Hotel","Motel"],
+        "@id": "https://hostalsunset.site/#lodging",
+        "name": "Hostal Sunset",
+        "url": "https://hostalsunset.site/",
+        "image": [
+          "https://hostalsunset.site/img/hero.webp",
+          "https://hostalsunset.site/img/mainfoto.webp",
+          "https://hostalsunset.site/img/garage.webp",
+          "https://hostalsunset.site/img/hjacuzzi.webp"
+        ],
+        "description": "Hostal en Villa El Salvador (Lima Sur) con habitaciones temáticas, suite con jacuzzi y cochera privada 24 horas.",
+        "priceRange": "S/40–S/75",
+        "currenciesAccepted": "PEN",
+        "paymentAccepted": "Efectivo, Visa, Mastercard, Yape, Plin",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61584980241713"
+        ],
+        "hasMap": "https://maps.app.goo.gl/K8qGFCWstMuESPJw9",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Principal s/n (Ref. Q2QX+WG5)",
+          "addressLocality": "Villa El Salvador",
+          "addressRegion": "Lima",
+          "postalCode": "15831",
+          "addressCountry": "PE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -12.2103648,
+          "longitude": -76.9510305
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Cochera privada 24 horas", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Suite con jacuzzi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Baño privado", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Smart TV", "value": true }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQ (debe existir visible en la página; abajo la sección FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Dónde queda el Hostal Sunset en Villa El Salvador (VES)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Estamos en Villa El Salvador (Lima Sur), a espaldas de la RENIEC de VES. Referencia: Av. Principal s/n (Ref. Q2QX+WG5)."
         }
-    </script>
-    
-    <style>
-        .bg-sunset {
-            background: linear-gradient(135deg, #F97316 0%, #DB2777 100%);
+      },
+      {
+        "@type": "Question",
+        "name": "¿Atienden por horas (hotel por horas / “telo” en Villa El Salvador)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Atención 24/7 con opciones por horas según el día, con baño privado, Smart TV y cochera privada."
         }
-        .text-gradient-sunset {
-            background: linear-gradient(135deg, #F97316 0%, #DB2777 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tienen cochera privada 24 horas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Contamos con cochera privada 24 horas para ingreso inmediato."
         }
-        .glass-nav {
-            background: rgba(15, 15, 16, 0.95);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hay suite con jacuzzi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Tenemos Suite Jacuzzi con hidromasaje como opción premium."
         }
-        .payment-logo {
-            filter: grayscale(100%) brightness(1.5);
-            transition: all 0.3s ease;
-            height: 30px;
-            object-fit: contain;
-            opacity: 0.8;
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué medios de pago aceptan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aceptamos efectivo, Visa, Mastercard, Yape y Plin."
         }
-        .payment-logo:hover {
-            filter: grayscale(0%) brightness(1);
-            opacity: 1;
-            transform: scale(1.1);
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind + FontAwesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#0F0F10',
+            surface: '#18181B',
+            sunsetOrange: '#F97316',
+            sunsetPink: '#DB2777',
+            textMain: '#F3F4F6',
+            textMuted: '#9CA3AF',
+          },
+          fontFamily: { sans: ['Inter','sans-serif'] }
         }
-    </style>
+      }
+    }
+  </script>
+
+  <style>
+    .bg-sunset { background: linear-gradient(135deg, #F97316 0%, #DB2777 100%); }
+    .text-gradient-sunset { background: linear-gradient(135deg, #F97316 0%, #DB2777 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glass-nav { background: rgba(15, 15, 16, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .payment-logo { filter: grayscale(100%) brightness(1.5); transition: all 0.3s ease; height: 30px; object-fit: contain; opacity: 0.8; }
+    .payment-logo:hover { filter: grayscale(0%) brightness(1); opacity: 1; transform: scale(1.1); }
+  </style>
 </head>
+
 <body class="bg-background text-textMain font-sans antialiased selection:bg-sunsetOrange selection:text-white">
 
-    <header class="fixed w-full top-0 z-50 glass-nav shadow-lg h-20 flex items-center">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold flex items-center gap-2 tracking-wide">
-                <i class="fa-solid fa-sun text-sunsetOrange text-3xl"></i>
-                <span>Hostal <span class="text-gradient-sunset font-extrabold">Sunset</span></span>
-            </a>
+  <!-- Skip link (accesibilidad) -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[999] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded">
+    Saltar al contenido
+  </a>
 
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
-                <a href="#inicio" class="text-textMuted hover:text-sunsetOrange transition">INICIO</a>
-                <a href="#habitaciones" class="text-textMuted hover:text-sunsetOrange transition">HABITACIONES</a>
-                <a href="#ubicacion" class="bg-sunset text-white font-bold px-6 py-2 rounded-full transition shadow-lg hover:shadow-orange-500/30 flex items-center gap-2 transform hover:-translate-y-0.5">
-                    <i class="fa-solid fa-location-dot"></i> UBICARNOS
-                </a>
-            </nav>
-            
-            <a href="#ubicacion" class="md:hidden text-sunsetOrange text-xl">
-                <i class="fa-solid fa-map-location-dot"></i>
-            </a>
-        </div>
-    </header>
+  <header class="fixed w-full top-0 z-50 glass-nav shadow-lg h-20 flex items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <a href="#inicio" class="text-2xl font-bold flex items-center gap-2 tracking-wide" aria-label="Ir al inicio">
+        <i class="fa-solid fa-sun text-sunsetOrange text-3xl"></i>
+        <span>Hostal <span class="text-gradient-sunset font-extrabold">Sunset</span></span>
+      </a>
 
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide" aria-label="Navegación principal">
+        <a href="#inicio" class="text-textMuted hover:text-sunsetOrange transition">INICIO</a>
+        <a href="#habitaciones" class="text-textMuted hover:text-sunsetOrange transition">HABITACIONES</a>
+        <a href="#faq" class="text-textMuted hover:text-sunsetOrange transition">FAQ</a>
+        <a href="#ubicacion" class="bg-sunset text-white font-bold px-6 py-2 rounded-full transition shadow-lg hover:shadow-orange-500/30 flex items-center gap-2 transform hover:-translate-y-0.5">
+          <i class="fa-solid fa-location-dot"></i> UBICARNOS EN VES
+        </a>
+      </nav>
+
+      <a href="#ubicacion" class="md:hidden text-sunsetOrange text-xl" aria-label="Ver ubicación">
+        <i class="fa-solid fa-map-location-dot"></i>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
     <section id="inicio" class="relative min-h-screen flex flex-col justify-center items-center overflow-hidden pt-28 pb-10">
-        
-        <div class="absolute inset-0 z-0">
-            <img src="img/hero.webp" 
-                 alt="Hostal Sunset Interior" class="w-full h-full object-cover opacity-40">
-            <div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+      <div class="absolute inset-0 z-0">
+        <img
+          src="img/hero.webp"
+          alt="Habitación moderna en Hostal Sunset Villa El Salvador"
+          class="w-full h-full object-cover opacity-40"
+          width="1920" height="1080"
+          loading="eager" decoding="async" fetchpriority="high"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+      </div>
+
+      <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center gap-6">
+        <div class="inline-block px-4 py-1 rounded-full border border-sunsetOrange/50 bg-sunsetOrange/10 text-sunsetOrange text-[10px] md:text-xs font-bold tracking-widest">
+          EL MEJOR POINT DE LIMA SUR
         </div>
 
-        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center gap-6">
-            
-            <div class="inline-block px-4 py-1 rounded-full border border-sunsetOrange/50 bg-sunsetOrange/10 text-sunsetOrange text-[10px] md:text-xs font-bold tracking-widest">
-                EXPERIENCIA Y CONFORT
-            </div>
-            
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-                Tu momento de relax <br/>
-                <span class="text-gradient-sunset">Empieza Aquí</span>
-            </h1>
-            
-            <div class="space-y-4 max-w-2xl">
-                <p class="text-base md:text-lg text-textMuted font-light">
-                    Habitaciones amplias con <strong> baño privado, sillón tantrico y Smart TV</strong>.
-                    <span class="block text-white font-medium mt-1">Ingreso Inmediato • Sin Reservas</span>
-                </p>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          <span class="block text-2xl md:text-3xl text-white mb-2 font-medium">Hostal en Villa El Salvador</span>
+          <span class="text-gradient-sunset">Tu momento de relax</span>
+        </h1>
 
-                <div class="inline-flex items-center gap-3 bg-gradient-to-r from-orange-900/40 to-pink-900/40 border border-sunsetOrange/40 rounded-xl px-5 py-3 shadow-lg shadow-orange-900/20 backdrop-blur-sm">
-                    <i class="fa-solid fa-square-parking text-3xl text-sunsetOrange"></i>
-                    <div class="text-left">
-                        <span class="block text-xs text-gray-300 uppercase tracking-wider">Servicio Exclusivo</span>
-                        <span class="block text-white font-bold text-lg leading-none">COCHERA PRIVADA 24 HORAS</span>
-                    </div>
-                </div>
+        <div class="space-y-4 max-w-2xl">
+          <p class="text-base md:text-lg text-textMuted font-light">
+            Habitaciones amplias con <strong>baño privado, sillón tántrico y Smart TV</strong>.
+            <span class="block text-white font-medium mt-1">Ubicación discreta • Ingreso Inmediato</span>
+          </p>
+          <p class="text-sm text-gray-300">
+            Ideal si buscas <strong>hostal</strong>, <strong>hotel</strong> o <strong>hotel por horas</strong> (tipo “telo”) en <strong>Villa El Salvador</strong>.
+          </p>
+
+          <div class="inline-flex items-center gap-3 bg-gradient-to-r from-orange-900/40 to-pink-900/40 border border-sunsetOrange/40 rounded-xl px-5 py-3 shadow-lg shadow-orange-900/20 backdrop-blur-sm">
+            <i class="fa-solid fa-square-parking text-3xl text-sunsetOrange"></i>
+            <div class="text-left">
+              <span class="block text-xs text-gray-300 uppercase tracking-wider">Privacidad Total</span>
+              <span class="block text-white font-bold text-lg leading-none">COCHERA PRIVADA 24H</span>
             </div>
-            
-            <div class="flex flex-col sm:flex-row gap-4 mt-2">
-                <a href="#habitaciones" class="bg-surface border border-gray-700 hover:border-sunsetOrange text-white font-bold py-3 px-8 rounded-full transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-bed"></i> Ver Tarifas
-                </a>
-                <a href="#ubicacion" class="bg-sunset text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-pink-500/40 transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-location-arrow"></i> Cómo Llegar
-                </a>
-            </div>
-            
-            <div class="mt-8 pt-6 border-t border-gray-800 w-full max-w-2xl">
-                <p class="text-[10px] text-gray-500 mb-4 tracking-widest uppercase">Aceptamos todos los medios de pago</p>
-                <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8 opacity-90">
-                    <img src="img/yape.png" alt="Yape" class="payment-logo" title="Yape">
-                    
-                    <img src="img/plin.png" alt="Plin" class="payment-logo" title="Plin">
-                    
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo" title="Visa">
-                    
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="payment-logo" title="Mastercard">
-                    
-                    <div class="flex items-center gap-1 text-green-500 payment-logo" style="filter: none; opacity: 1;">
-                         <i class="fa-solid fa-money-bill-wave text-xl"></i>
-                         <span class="text-xs font-bold text-white">Efectivo</span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-2">
+          <a href="#habitaciones" class="bg-surface border border-gray-700 hover:border-sunsetOrange text-white font-bold py-3 px-8 rounded-full transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-bed"></i> Ver Precios
+          </a>
+          <a href="#ubicacion" class="bg-sunset text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-pink-500/40 transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-location-arrow"></i> Cómo Llegar
+          </a>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-gray-800 w-full max-w-2xl">
+          <p class="text-[10px] text-gray-500 mb-4 tracking-widest uppercase">Aceptamos todos los medios de pago</p>
+          <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8 opacity-90">
+            <img src="img/yape.png" alt="Yape" class="payment-logo" width="120" height="30" loading="lazy" decoding="async">
+            <img src="img/plin.png" alt="Plin" class="payment-logo" width="120" height="30" loading="lazy" decoding="async">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo" width="120" height="30" loading="lazy" decoding="async">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="payment-logo" width="120" height="30" loading="lazy" decoding="async">
+            <div class="flex items-center gap-1 text-green-500 payment-logo" style="filter: none; opacity: 1;">
+              <i class="fa-solid fa-money-bill-wave text-xl"></i>
+              <span class="text-xs font-bold text-white">Efectivo</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="habitaciones" class="py-24 bg-background relative">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestras Habitaciones</h2>
-                <div class="w-24 h-1 bg-sunset mx-auto rounded-full"></div>
-                <p class="text-textMuted mt-4">Todas con baño privado y acabados en mayólica.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                
-                <article class="bg-surface rounded-2xl overflow-hidden border border-gray-800 hover:border-sunsetOrange/50 transition duration-300 flex flex-col">
-                    <div class="h-64 overflow-hidden relative group cursor-pointer" onclick="openModal(this.querySelector('img').src)">
-                        <img src="img/hbasic.webp" 
-                             alt="Habitación Básica" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-4 right-4 bg-gray-800 text-white text-xs font-bold px-3 py-1 rounded">ECONÓMICA</div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-2xl font-bold mb-2">Habitación Básica</h3>
-                        <p class="text-sm text-textMuted mb-6">
-                            Excelente confort al mejor precio. Incluye TV y <strong>baño privado con tina de mayólica</strong>.
-                        </p>
-                        
-                        <div class="mt-auto bg-black/30 rounded-lg p-4">
-                            <div class="grid grid-cols-2 gap-4 text-center">
-                                <div>
-                                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Lun - Vie</p>
-                                    <p class="text-xl font-bold text-white">S/ 40</p>
-                                    <p class="text-xs text-sunsetOrange">x 12 Horas</p>
-                                </div>
-                                <div class="border-l border-gray-700">
-                                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Sáb - Dom</p>
-                                    <p class="text-xl font-bold text-white">S/ 40</p>
-                                    <p class="text-xs text-sunsetOrange">x 8 Horas</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="bg-surface rounded-2xl overflow-hidden border-2 border-sunsetOrange/30 hover:border-sunsetOrange transition duration-300 relative shadow-2xl shadow-orange-900/10 flex flex-col transform md:-translate-y-4">
-                    <div class="absolute top-0 left-0 w-full bg-sunset text-white text-center text-xs font-bold py-1 uppercase tracking-widest z-10">
-                        Recomendada
-                    </div>
-                    <div class="h-64 overflow-hidden relative group cursor-pointer" onclick="openModal(this.querySelector('img').src)">
-                        <img src="img/hconfort.webp" 
-                             alt="Habitación Confort" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-2xl font-bold mb-2 text-white">Estándar Confort</h3>
-                        <p class="text-sm text-textMuted mb-6">
-                            Disfruta de <strong>mayor amplitud</strong>, mobiliario moderno y un ambiente diseñado para tu total comodidad.
-                        </p>
-                        
-                        <div class="mt-auto bg-white/5 rounded-lg p-4 border border-sunsetOrange/20">
-                            <div class="grid grid-cols-2 gap-4 text-center">
-                                <div>
-                                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Lun - Vie</p>
-                                    <p class="text-2xl font-bold text-sunsetOrange">S/ 50</p>
-                                    <p class="text-xs text-gray-300">x 12 Horas</p>
-                                </div>
-                                <div class="border-l border-gray-600">
-                                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Sáb - Dom</p>
-                                    <p class="text-2xl font-bold text-sunsetOrange">S/ 50</p>
-                                    <p class="text-xs text-gray-300">x 8 Horas</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="bg-surface rounded-2xl overflow-hidden border border-gray-800 hover:border-sunsetPink/50 transition duration-300 flex flex-col">
-                    <div class="h-64 overflow-hidden relative group cursor-pointer" onclick="openModal(this.querySelector('img').src)">
-                        <img src="img/hjacuzzi.webp" 
-                             alt="Suite Jacuzzi" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-4 right-4 bg-sunsetPink text-white text-xs font-bold px-3 py-1 rounded shadow-lg">VIP</div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-center mb-2">
-                            <h3 class="text-2xl font-bold">Suite Jacuzzi</h3>
-                            <i class="fa-solid fa-hot-tub-person text-sunsetPink text-2xl"></i>
-                        </div>
-                        <p class="text-sm text-textMuted mb-6">La experiencia premium. Relájate en nuestro jacuzzi privado con sistema de hidromasaje.</p>
-                        
-                        <div class="mt-auto bg-black/30 rounded-lg p-4">
-                            <div class="grid grid-cols-2 gap-4 text-center">
-                                <div>
-                                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Lun - Vie</p>
-                                    <p class="text-xl font-bold text-white">S/ 70</p>
-                                    <p class="text-xs text-sunsetPink">x 12 Horas</p>
-                                </div>
-                                <div class="border-l border-gray-700">
-                                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Sáb - Dom</p>
-                                    <p class="text-xl font-bold text-white">S/ 75</p>
-                                    <p class="text-xs text-sunsetPink">x 8 Horas</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestras Habitaciones</h2>
+          <div class="w-24 h-1 bg-sunset mx-auto rounded-full"></div>
+          <p class="text-textMuted mt-4">Encuentra el hospedaje perfecto en Villa El Salvador al mejor precio.</p>
         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+          <article class="bg-surface rounded-2xl overflow-hidden border border-gray-800 hover:border-sunsetOrange/50 transition duration-300 flex flex-col">
+            <div class="h-64 overflow-hidden relative group cursor-pointer" onclick="openModal(this.querySelector('img').src)" role="button" aria-label="Ver foto habitación básica">
+              <img src="img/hbasic.webp"
+                   alt="Habitación económica hostal Villa El Salvador"
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                   width="900" height="600" loading="lazy" decoding="async">
+              <div class="absolute top-4 right-4 bg-gray-800 text-white text-xs font-bold px-3 py-1 rounded">ECONÓMICA</div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-bold mb-2">Habitación Básica</h3>
+              <p class="text-sm text-textMuted mb-6">
+                Excelente confort al mejor precio. Incluye TV cable y <strong>baño privado impecable</strong>.
+              </p>
+              <div class="mt-auto bg-black/30 rounded-lg p-4">
+                <div class="grid grid-cols-2 gap-4 text-center">
+                  <div>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Lun - Vie</p>
+                    <p class="text-xl font-bold text-white">S/ 40</p>
+                    <p class="text-xs text-sunsetOrange">x 12 Horas</p>
+                  </div>
+                  <div class="border-l border-gray-700">
+                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Sáb - Dom</p>
+                    <p class="text-xl font-bold text-white">S/ 40</p>
+                    <p class="text-xs text-sunsetOrange">x 8 Horas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-surface rounded-2xl overflow-hidden border-2 border-sunsetOrange/30 hover:border-sunsetOrange transition duration-300 relative shadow-2xl shadow-orange-900/10 flex flex-col transform md:-translate-y-4">
+            <div class="absolute top-0 left-0 w-full bg-sunset text-white text-center text-xs font-bold py-1 uppercase tracking-widest z-10">
+              Recomendada
+            </div>
+            <div class="h-64 overflow-hidden relative group cursor-pointer" onclick="openModal(this.querySelector('img').src)" role="button" aria-label="Ver foto habitación confort">
+              <img src="img/hconfort.webp"
+                   alt="Hospedaje parejas Villa El Salvador moderna"
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                   width="900" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-2xl font-bold mb-2 text-white">Estándar Confort</h3>
+              <p class="text-sm text-textMuted mb-6">
+                Disfruta de <strong>mayor amplitud</strong>, sillón tántrico y un ambiente diseñado para tu total privacidad.
+              </p>
+              <div class="mt-auto bg-white/5 rounded-lg p-4 border border-sunsetOrange/20">
+                <div class="grid grid-cols-2 gap-4 text-center">
+                  <div>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Lun - Vie</p>
+                    <p class="text-2xl font-bold text-sunsetOrange">S/ 50</p>
+                    <p class="text-xs text-gray-300">x 12 Horas</p>
+                  </div>
+                  <div class="border-l border-gray-600">
+                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Sáb - Dom</p>
+                    <p class="text-2xl font-bold text-sunsetOrange">S/ 50</p>
+                    <p class="text-xs text-gray-300">x 8 Horas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-surface rounded-2xl overflow-hidden border border-gray-800 hover:border-sunsetPink/50 transition duration-300 flex flex-col">
+            <div class="h-64 overflow-hidden relative group cursor-pointer" onclick="openModal(this.querySelector('img').src)" role="button" aria-label="Ver foto suite jacuzzi">
+              <img src="img/hjacuzzi.webp"
+                   alt="Suite con Jacuzzi en Villa El Salvador"
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                   width="900" height="600" loading="lazy" decoding="async">
+              <div class="absolute top-4 right-4 bg-sunsetPink text-white text-xs font-bold px-3 py-1 rounded shadow-lg">VIP</div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex justify-between items-center mb-2">
+                <h3 class="text-2xl font-bold">Suite Jacuzzi</h3>
+                <i class="fa-solid fa-hot-tub-person text-sunsetPink text-2xl"></i>
+              </div>
+              <p class="text-sm text-textMuted mb-6">La experiencia premium en el Cono Sur. Relájate en nuestro <strong>jacuzzi privado con hidromasaje</strong>.</p>
+              <div class="mt-auto bg-black/30 rounded-lg p-4">
+                <div class="grid grid-cols-2 gap-4 text-center">
+                  <div>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Lun - Vie</p>
+                    <p class="text-xl font-bold text-white">S/ 70</p>
+                    <p class="text-xs text-sunsetPink">x 12 Horas</p>
+                  </div>
+                  <div class="border-l border-gray-700">
+                    <p class="text-[10px] text-gray-400 uppercase tracking-wider">Sáb - Dom</p>
+                    <p class="text-xl font-bold text-white">S/ 75</p>
+                    <p class="text-xs text-sunsetPink">x 8 Horas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
     <section class="py-20 bg-[#0a0a0b]">
-        <div class="container mx-auto px-6">
-            <h2 class="text-2xl font-bold mb-8 text-center"><i class="fa-solid fa-camera mr-2 text-sunsetOrange"></i>Instalaciones Reales</h2>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-[500px]">
-                <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden cursor-pointer group relative" onclick="openModal(this.querySelector('img').src)">
-                    <img src="img/mainfoto.webp" 
-                         alt="Habitación Principal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/80 to-transparent w-full">
-                        <span class="text-white text-sm font-bold">Habitaciones Amplias</span>
-                    </div>
-                </div>
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold mb-8 text-center"><i class="fa-solid fa-camera mr-2 text-sunsetOrange"></i>Fotos Reales del Hostal</h2>
 
-                <div class="col-span-1 row-span-1 rounded-2xl overflow-hidden cursor-pointer group relative" onclick="openModal(this.querySelector('img').src)">
-                    <img src="img/bano1.webp" 
-                         alt="Baño Mayólica 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                </div>
-
-                <div class="col-span-1 row-span-1 rounded-2xl overflow-hidden cursor-pointer group relative" onclick="openModal(this.querySelector('img').src)">
-                    <img src="img/bano2.webp" 
-                         alt="Baño Mayólica 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition">
-                        <span class="text-white font-bold"><i class="fa-solid fa-expand"></i> Ver</span>
-                    </div>
-                </div>
-
-                <div class="col-span-2 row-span-1 rounded-2xl overflow-hidden cursor-pointer group relative" onclick="openModal(this.querySelector('img').src)">
-                    <img src="img/garage.webp" 
-                         alt="Cochera Privada" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                     <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/80 to-transparent w-full">
-                        <span class="text-white text-sm font-bold">Garage 24 Horas</span>
-                    </div>
-                </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-[500px]">
+          <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden cursor-pointer group relative" onclick="openModal(this.querySelector('img').src)" role="button" aria-label="Ver foto principal">
+            <img src="img/mainfoto.webp"
+                 alt="Habitaciones amplias en Hostal Sunset VES"
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                 width="1200" height="900" loading="lazy" decoding="async">
+            <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/80 to-transparent w-full">
+              <span class="text-white text-sm font-bold">Habitaciones Amplias</span>
             </div>
+          </div>
+
+          <div class="col-span-1 row-span-1 rounded-2xl overflow-hidden cursor-pointer group relative" onclick="openModal(this.querySelector('img').src)" role="button" aria-label="Ver baño 1">
+            <img src="img/bano1.webp"
+                 alt="Baño limpio hostal Villa El Salvador"
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                 width="900" height="600" loading="lazy" decoding="async">
+          </div>
+
+          <div class="col-span-1 row-span-1 rounded-2xl overflow-hidden cursor-pointer group relative" onclick="openModal(this.querySelector('img').src)" role="button" aria-label="Ver baño 2">
+            <img src="img/bano2.webp"
+                 alt="Duchas con agua caliente hostal"
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                 width="900" height="600" loading="lazy" decoding="async">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition">
+              <span class="text-white font-bold"><i class="fa-solid fa-expand"></i> Ver</span>
+            </div>
+          </div>
+
+          <div class="col-span-2 row-span-1 rounded-2xl overflow-hidden cursor-pointer group relative" onclick="openModal(this.querySelector('img').src)" role="button" aria-label="Ver cochera">
+            <img src="img/garage.webp"
+                 alt="Hostal con Cochera Privada Villa El Salvador"
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                 width="1200" height="600" loading="lazy" decoding="async">
+            <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/80 to-transparent w-full">
+              <span class="text-white text-sm font-bold">Garage 24 Horas</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="ubicacion" class="py-24 bg-background border-t border-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="bg-surface rounded-3xl p-8 md:p-12 border border-gray-800 flex flex-col md:flex-row gap-12 items-center shadow-2xl">
-                
-                <div class="md:w-1/2">
-                    <span class="text-sunsetOrange font-bold tracking-widest text-xs uppercase mb-2 block">Villa El Salvador</span>
-                    <h2 class="text-4xl font-bold text-white mb-6">Visítanos Hoy Mismo</h2>
-                    <p class="text-textMuted mb-8 text-lg">
-                        Olvídate de reservas complicadas. Solo acércate a nuestra recepción. 
-                        Garantizamos privacidad total y un servicio rápido.
-                    </p>
-                    
-                    <div class="space-y-6 mb-8">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-sunsetOrange text-xl shrink-0">
-                                <i class="fa-solid fa-map-pin"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold text-lg">Dirección</h4>
-                                <p class="text-gray-400">Av. Principal s/n (Ref. Q2QX+WG5), Villa El Salvador 15831.</p>
-                                <p class="text-sunsetOrange font-semibold mt-1"><i class="fa-solid fa-landmark mr-1"></i> A 1 cuadra de la RENIEC</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-sunsetPink text-xl shrink-0">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold text-lg">Horario</h4>
-                                <p class="text-gray-400">Atención las 24 horas del día.</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container mx-auto px-6">
+        <div class="bg-surface rounded-3xl p-8 md:p-12 border border-gray-800 flex flex-col md:flex-row gap-12 items-center shadow-2xl">
 
-                    <a href="https://www.google.com/maps/place/Hotel+Sunset/@-12.2106472,-76.9521094,18.3z/data=!4m15!1m8!3m7!1s0x9105b96362f46b0d:0xb30e7786907ac143!2sA,+Villa+EL+Salvador+15831!3b1!8m2!3d-12.2107364!4d-76.950713!16s%2Fg%2F11h9k_28m7!3m5!1s0x9105b9649c0d3b13:0x69555109066f0925!8m2!3d-12.2102427!4d-76.9511453!16s%2Fg%2F11g9grq9c0?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" 
-                       class="inline-flex w-full md:w-auto items-center justify-center gap-2 bg-white text-black font-bold py-4 px-8 rounded-xl hover:bg-gray-200 transition">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg" class="w-6 h-6" alt="GMap">
-                        Abrir en Google Maps
-                    </a>
-                </div>
+          <div class="md:w-1/2">
+            <span class="text-sunsetOrange font-bold tracking-widest text-xs uppercase mb-2 block">Villa El Salvador - Lima Sur</span>
+            <h2 class="text-4xl font-bold text-white mb-6">Ubicación Estratégica</h2>
+            <p class="text-textMuted mb-8 text-lg">
+              Estamos ubicados en una zona tranquila y accesible. Cerca a la Reniec y al Parque Industrial.
+              Olvídate de reservas complicadas, ingreso directo con cochera.
+            </p>
 
-                <div class="md:w-1/2 w-full h-[400px] bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 relative">
-                    
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32584.819506534117!2d-76.98826571637356!3d-12.21622870909595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9649c0d3b13%3A0x69555109066f0925!2sHotel%20Sunset!5e0!3m2!1ses!2spe!4v1764725046784!5m2!1ses!2spe" 
-                        width="100%" height="100%" 
-                        style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(0.9);" 
-                        allowfullscreen="" loading="lazy">
-                    </iframe>
-                    
-                    <div class="absolute bottom-4 left-4 bg-black/80 backdrop-blur px-4 py-2 rounded-lg border border-gray-700">
-                         <p class="text-xs text-white font-bold">📍 Hostal Sunset</p>
-                    </div>
+            <div class="space-y-6 mb-8">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-sunsetOrange text-xl shrink-0">
+                  <i class="fa-solid fa-map-pin"></i>
                 </div>
+                <div>
+                  <h3 class="text-white font-bold text-lg">Dirección</h3>
+                  <p class="text-gray-400">Av. Principal s/n (Ref. Q2QX+WG5), Villa El Salvador 15831.</p>
+                  <p class="text-sunsetOrange font-semibold mt-1 text-sm"><i class="fa-solid fa-landmark mr-1"></i> A espaldas de la RENIEC de VES</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-sunsetPink text-xl shrink-0">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <h3 class="text-white font-bold text-lg">Horario</h3>
+                  <p class="text-gray-400">Atención las 24 horas, los 365 días.</p>
+                </div>
+              </div>
             </div>
+
+            <a href="https://maps.app.goo.gl/K8qGFCWstMuESPJw9" target="_blank" rel="noopener"
+               class="inline-flex w-full md:w-auto items-center justify-center gap-2 bg-white text-black font-bold py-4 px-8 rounded-xl hover:bg-gray-200 transition shadow-lg hover:shadow-white/20">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg" class="w-6 h-6" alt="Icono Google Maps" width="24" height="24" loading="lazy" decoding="async">
+              Abrir GPS Ahora
+            </a>
+          </div>
+
+          <div class="md:w-1/2 w-full h-[500px] bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 relative shadow-inner">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52583.084800183955!2d-77.02507445723512!3d-12.19369061623564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9649c0d3b13%3A0x69555109066f0925!2sHostal%20Sunset!5e0!3m2!1ses!2spe!4v1765578396721!5m2!1ses!2spe"
+              width="100%"
+              height="100%"
+              style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(0.9) contrast(1.2);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de ubicación Hostal Sunset Villa El Salvador">
+            </iframe>
+
+            <div class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-md px-4 py-2 rounded-lg border border-gray-600 flex items-center gap-2">
+              <span class="relative flex h-3 w-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+              </span>
+              <p class="text-xs text-white font-bold">Abierto ahora</p>
+            </div>
+          </div>
+
         </div>
+      </div>
     </section>
 
-    <footer class="bg-black text-gray-500 py-10 border-t border-gray-900 text-sm">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-center md:text-left">
-                <span class="text-white font-bold text-lg block mb-1">Hostal Sunset</span>
-                <p>Más de 11 años brindando confort en Villa El Salvador.</p>
-            </div>
+    <!-- FAQ visible (para rankear búsquedas tipo hostal/hotel/telo en VES) -->
+    <section id="faq" class="py-20 bg-background border-t border-gray-900">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl font-bold mb-6">Preguntas frecuentes</h2>
+        <p class="text-textMuted mb-10">
+          Si buscas <strong>hostal</strong>, <strong>hotel</strong> u opción de <strong>hotel por horas</strong> (tipo “telo”) en <strong>Villa El Salvador</strong>,
+          aquí tienes lo principal.
+        </p>
 
-            <div class="flex gap-4">
-                 <a href="https://www.facebook.com/profile.php?id=61584980241713" target="_blank" class="w-10 h-10 rounded-full bg-surface border border-gray-800 flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition duration-300 transform hover:-translate-y-1" aria-label="Síguenos en Facebook" title="Síguenos en Facebook">
-                    <i class="fa-brands fa-facebook-f text-lg"></i>
-                </a>
-            </div>
+        <div class="space-y-6">
+          <div class="bg-surface border border-gray-800 rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-2">¿Dónde queda el Hostal Sunset en Villa El Salvador (VES)?</h3>
+            <p class="text-textMuted">Estamos en Villa El Salvador (Lima Sur), a espaldas de la RENIEC de VES. Referencia: Av. Principal s/n (Ref. Q2QX+WG5).</p>
+          </div>
 
-            <p>© 2025 Grupo Sunset. Todos los derechos reservados.</p>
+          <div class="bg-surface border border-gray-800 rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-2">¿Atienden por horas (hotel por horas / “telo” en Villa El Salvador)?</h3>
+            <p class="text-textMuted">Sí. Atención 24/7 con opciones por horas según el día, con baño privado, Smart TV y cochera privada.</p>
+          </div>
+
+          <div class="bg-surface border border-gray-800 rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-2">¿Tienen cochera privada 24 horas?</h3>
+            <p class="text-textMuted">Sí. Contamos con cochera privada 24 horas para ingreso inmediato.</p>
+          </div>
+
+          <div class="bg-surface border border-gray-800 rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-2">¿Hay suite con jacuzzi?</h3>
+            <p class="text-textMuted">Sí. Tenemos Suite Jacuzzi con hidromasaje como opción premium.</p>
+          </div>
+
+          <div class="bg-surface border border-gray-800 rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-2">¿Qué medios de pago aceptan?</h3>
+            <p class="text-textMuted">Aceptamos efectivo, Visa, Mastercard, Yape y Plin.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <div id="imageModal" class="fixed inset-0 z-[100] bg-black/95 hidden flex justify-center items-center p-4 backdrop-blur-sm" onclick="this.classList.add('hidden')">
-        <button class="absolute top-6 right-6 text-white text-4xl hover:text-sunsetOrange transition">×</button>
-        <img id="modalImg" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl border border-gray-800">
+  <footer class="bg-black text-gray-500 py-10 border-t border-gray-900 text-sm">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <span class="text-white font-bold text-lg block mb-1">Hostal Sunset</span>
+        <p>Hospedaje en Villa El Salvador (VES). Privacidad, cochera privada 24/7 y suite con jacuzzi.</p>
+      </div>
+
+      <div class="flex gap-4">
+        <a href="https://www.facebook.com/profile.php?id=61584980241713" target="_blank" rel="noopener"
+           class="w-10 h-10 rounded-full bg-surface border border-gray-800 flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition duration-300 transform hover:-translate-y-1"
+           aria-label="Síguenos en Facebook" title="Síguenos en Facebook">
+          <i class="fa-brands fa-facebook-f text-lg"></i>
+        </a>
+      </div>
+
+      <p>© 2025 Grupo Sunset. Todos los derechos reservados.</p>
     </div>
+  </footer>
 
-    <script>
-        function openModal(src) {
-            document.getElementById('modalImg').src = src;
-            document.getElementById('imageModal').classList.remove('hidden');
-        }
-    </script>
+  <div id="imageModal" class="fixed inset-0 z-[100] bg-black/95 hidden flex justify-center items-center p-4 backdrop-blur-sm" onclick="this.classList.add('hidden')">
+    <button class="absolute top-6 right-6 text-white text-4xl hover:text-sunsetOrange transition" aria-label="Cerrar">×</button>
+    <img id="modalImg" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl border border-gray-800" alt="Vista ampliada">
+  </div>
+
+  <script>
+    function openModal(src) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('imageModal').classList.remove('hidden');
+    }
+  </script>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+          integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+          data-cf-beacon='{"version":"2024.11.0","token":"46eaea14a4084490b41fbfdc20e0aad2","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+          crossorigin="anonymous"></script>
 </body>
 </html>
